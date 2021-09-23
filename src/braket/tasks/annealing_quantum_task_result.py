@@ -157,7 +157,7 @@ class AnnealingQuantumTaskResult:
         num_solutions = solutions.shape
         variable_count = solutions.shape
         datatypes = [
-            ("solution", solutions.dtype),
+            ("solution", solutions.dtype, (variable_count,),
             ("value", values.dtype),
             ("solution_count", solution_counts.dtype),
         ]
