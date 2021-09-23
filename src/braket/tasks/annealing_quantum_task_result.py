@@ -162,7 +162,7 @@ class AnnealingQuantumTaskResult:
             ("solution_count", solution_counts.dtype),
         ]
 
-        record = numpy.rec.array(numpy.zeros(num_solutions, dtype=datatypes))
+        record = numpy.rec.array(numpy.zeros(num_solutions), dtype=datatypes)
         record["solution"] = solutions
         record["value"] = values
         record["solution_count"] = solution_counts
