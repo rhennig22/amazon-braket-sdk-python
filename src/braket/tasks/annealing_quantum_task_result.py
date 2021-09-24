@@ -154,8 +154,7 @@ class AnnealingQuantumTaskResult:
             solution_counts (numpy.ndarray): list of number of times the solutions occurred
             values (numpy.ndarray): list of the output or energy of the solutions
         """
-        num_solutions = solutions.shape
-        variable_count = solutions.shape
+        num_solutions, variable_count = solutions.shape
         datatypes = [
             ("solution", solutions.dtype, (variable_count,)),
             ("value", values.dtype),
